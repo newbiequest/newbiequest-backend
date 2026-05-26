@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.newbiequest.newque.NewqueApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-20T05:39:51.482Z" hostname="imjiyuui-MacBookPro.local" time="1.869">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.newbiequest.newque.NewqueApplicationTests" time="0.242"/>
+  <system-out><![CDATA[14:39:51.526 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.newbiequest.newque.NewqueApplicationTests]: NewqueApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:39:51.561 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.newbiequest.newque.NewqueApplication for test class com.newbiequest.newque.NewqueApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2026-04-20T14:39:51.714+09:00  INFO 3749 --- [newque] [    Test worker] c.n.newque.NewqueApplicationTests        : Starting NewqueApplicationTests using Java 17.0.14 with PID 3749 (started by imjiyu in /Users/imjiyu/Documents/GitHub/newque-backend)
+2026-04-20T14:39:51.715+09:00  INFO 3749 --- [newque] [    Test worker] c.n.newque.NewqueApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2026-04-20T14:39:51.723+09:00 DEBUG 3749 --- [newque] [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5136207f
+2026-04-20T14:39:51.928+09:00  INFO 3749 --- [newque] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-20T14:39:51.928+09:00  INFO 3749 --- [newque] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2026-04-20T14:39:51.939+09:00  INFO 3749 --- [newque] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.newbiequest.newque.domain.member.repository.MemberRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-04-20T14:39:51.939+09:00  INFO 3749 --- [newque] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.newbiequest.newque.domain.post.repository.PostRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-04-20T14:39:51.940+09:00  INFO 3749 --- [newque] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2026-04-20T14:39:51.944+09:00  INFO 3749 --- [newque] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-20T14:39:51.944+09:00  INFO 3749 --- [newque] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-20T14:39:51.983+09:00  INFO 3749 --- [newque] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2026-04-20T14:39:52.097+09:00  INFO 3749 --- [newque] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-20T14:39:52.112+09:00  INFO 3749 --- [newque] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2026-04-20T14:39:52.121+09:00  INFO 3749 --- [newque] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-20T14:39:52.207+09:00  INFO 3749 --- [newque] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-20T14:39:52.217+09:00  INFO 3749 --- [newque] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-20T14:39:52.279+09:00  INFO 3749 --- [newque] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2026-04-20T14:39:52.281+09:00  INFO 3749 --- [newque] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-20T14:39:52.289+09:00  WARN 3749 --- [newque] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-20T14:39:52.296+09:00  INFO 3749 --- [newque] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-20T14:39:52.573+09:00  INFO 3749 --- [newque] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-20T14:39:52.578+09:00 DEBUG 3749 --- [newque] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists member cascade 
+Hibernate: 
+    drop table if exists member cascade 
+2026-04-20T14:39:52.580+09:00 DEBUG 3749 --- [newque] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists post cascade 
+Hibernate: 
+    drop table if exists post cascade 
+2026-04-20T14:39:52.581+09:00 DEBUG 3749 --- [newque] [    Test worker] org.hibernate.SQL                        : 
+    create table member (
+        id bigint generated by default as identity,
+        nickname varchar(255) not null unique,
+        password varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table member (
+        id bigint generated by default as identity,
+        nickname varchar(255) not null unique,
+        password varchar(255) not null,
+        primary key (id)
+    )
+2026-04-20T14:39:52.586+09:00 DEBUG 3749 --- [newque] [    Test worker] org.hibernate.SQL                        : 
+    create table post (
+        id bigint generated by default as identity,
+        likes bigint,
+        member_id bigint,
+        body varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table post (
+        id bigint generated by default as identity,
+        likes bigint,
+        member_id bigint,
+        body varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-04-20T14:39:52.587+09:00 DEBUG 3749 --- [newque] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists post 
+       add constraint fk_post_member_id 
+       foreign key (member_id) 
+       references member 
+       on delete cascade
+Hibernate: 
+    alter table if exists post 
+       add constraint fk_post_member_id 
+       foreign key (member_id) 
+       references member 
+       on delete cascade
+2026-04-20T14:39:52.593+09:00  INFO 3749 --- [newque] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-20T14:39:52.878+09:00  WARN 3749 --- [newque] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-20T14:39:52.931+09:00 DEBUG 3749 --- [newque] [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2026-04-20T14:39:52.961+09:00 DEBUG 3749 --- [newque] [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-04-20T14:39:52.975+09:00 DEBUG 3749 --- [newque] [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-04-20T14:39:52.995+09:00 DEBUG 3749 --- [newque] [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-04-20T14:39:53.042+09:00  INFO 3749 --- [newque] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2026-04-20T14:39:53.103+09:00  INFO 3749 --- [newque] [    Test worker] c.n.newque.NewqueApplicationTests        : Started NewqueApplicationTests in 1.471 seconds (process running for 1.867)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
