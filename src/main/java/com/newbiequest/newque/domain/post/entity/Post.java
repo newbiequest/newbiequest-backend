@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -30,12 +32,15 @@ public class Post {
 
     Long likes;
 
+    LocalDateTime createAt;
+
     @Builder
     public Post (String title, String body, Member member) {
         this.title = title;
         this.body = body;
         this.member = member;
         this.likes = 0L;
+        this.createAt = LocalDateTime.now();
     }
     public void updateTitle(final String title) {
         this.title = title;

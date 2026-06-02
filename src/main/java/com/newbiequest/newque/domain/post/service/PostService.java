@@ -44,7 +44,7 @@ public class PostService {
                 .title(post.getTitle())
                 .body(post.getBody())
                 .likes(post.getLikes())
-                .createAt(LocalDateTime.now())
+                .createAt(post.getCreateAt())
                 .build();
 
         return postResponse;
@@ -75,11 +75,11 @@ public class PostService {
     public void modifyPost(Long postId, PostUpdateRequest postUpdateRequest) {
         Post post = postRepository.findById(postId).orElseThrow();
 
-        if (post.getTitle() != postUpdateRequest.getTitle()) {
+        if (!post.getTitle().equals(postUpdateRequest.getTitle())) {
             post.updateTitle(postUpdateRequest.getTitle());
         }
 
-        if (post.getBody() != postUpdateRequest.getBody()) {
+        if (!post.getBody().equals(postUpdateRequest.getBody())) {
             post.updateBody(postUpdateRequest.getBody());
         }
 
@@ -115,6 +115,7 @@ public class PostService {
                     .title(post.getTitle())
                     .body(post.getBody())
                     .likes(post.getLikes())
+                    .createAt(post.getCreateAt())
                     .build();
 
             responseList.add(response);
