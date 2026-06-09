@@ -1,20 +1,15 @@
 package com.newbiequest.newque.domain.openai.dto.response;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
+@Builder
 public class ChatResponse {
 
-    private String answer;
-
-    public ChatResponse(String answer) {
-        this.answer = answer;
-    }
-
-    public static ChatResponse of(String answer) {
-        return new ChatResponse(answer);
-    }
+    private String npcName;
+    private String taskType;
+    private String condition;
+    private String message;
 }

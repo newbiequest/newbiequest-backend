@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="251b8c8d-34b5-4c36-a68a-b4ed64101def" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/post/entity/Post$PostBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/post/entity/Post$PostBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/post/entity/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/post/entity/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/post/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/post/service/PostService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/newque-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/newque-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/com.newbiequest.newque.NewqueApplicationTests/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/com.newbiequest.newque.NewqueApplicationTests/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.newbiequest.newque.NewqueApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.newbiequest.newque.NewqueApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output-events.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output-events.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results-generic.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results-generic.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MemberController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/post/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/post/entity/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/post/service/PostService.java" afterDir="false" />
-    </list>
+    <list default="true" id="251b8c8d-34b5-4c36-a68a-b4ed64101def" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +46,14 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -75,41 +66,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build newbiequest-backend.executor": "Run",
-    "Gradle.newbiequest-backend [assemble].executor": "Run",
-    "Gradle.newbiequest-backend [bootJar].executor": "Run",
-    "Gradle.newbiequest-backend [build].executor": "Run",
-    "Gradle.newbiequest-backend [jar].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "New/updated database configurations found",
-    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.NewqueApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/imjiyu/Documents/GitHub/newbiequest-backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build newbiequest-backend.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.newbiequest-backend [assemble].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.newbiequest-backend [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.newbiequest-backend [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.newbiequest-backend [jar].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Whole project.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;New/updated database configurations found&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.NewqueApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/imjiyu/Documents/GitHub/newbiequest-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.newbiequest-backend [bootJar]">
     <configuration name="newbiequest-backend [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -211,7 +203,12 @@
       <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="Whole project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,8 +229,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.newbiequest-backend [bootJar]" />
-        <item itemvalue="Gradle.newbiequest-backend [jar]" />
+        <item itemvalue="JUnit.Whole project" />
         <item itemvalue="Gradle.newbiequest-backend [assemble]" />
+        <item itemvalue="Gradle.newbiequest-backend [jar]" />
         <item itemvalue="Gradle.newbiequest-backend [build]" />
       </list>
     </recent_temporary>
@@ -248,7 +246,13 @@
       <workItem from="1779762803168" duration="5003000" />
       <workItem from="1779773450907" duration="8054000" />
       <workItem from="1780279551036" duration="45000" />
-      <workItem from="1780279607628" duration="5905000" />
+      <workItem from="1780279607628" duration="10466000" />
+      <workItem from="1780484752083" duration="1979000" />
+      <workItem from="1780819913105" duration="3320000" />
+      <workItem from="1780876504822" duration="2720000" />
+      <workItem from="1780883818402" duration="249000" />
+      <workItem from="1780884080256" duration="6813000" />
+      <workItem from="1780967508939" duration="414000" />
     </task>
     <servers />
   </component>
