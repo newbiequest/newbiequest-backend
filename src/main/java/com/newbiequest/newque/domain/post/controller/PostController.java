@@ -78,6 +78,14 @@ public class PostController {
         return ResponseEntity.ok().body(postResponse);
     }
 
+    @GetMapping("/post")
+    public ResponseEntity<List<PostResponse>> getAllPosts() {
+        List<Post> posts = postService.getAllPosts();
+        List<PostResponse> postResponses = postService.postsToPostResponses(posts);
+
+        return ResponseEntity.ok().body(postResponses);
+    }
+
     @GetMapping("/post/member/{memberId}")
     public ResponseEntity<List<PostResponse>> getPostsByMemberId(@PathVariable Long memberId) {
         List<Post> posts = postService.getPostsByMemberId(memberId);

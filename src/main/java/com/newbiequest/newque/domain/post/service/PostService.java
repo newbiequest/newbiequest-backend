@@ -8,7 +8,6 @@ import com.newbiequest.newque.domain.post.dto.response.PostDeleteResponse;
 import com.newbiequest.newque.domain.post.dto.response.PostResponse;
 import com.newbiequest.newque.domain.post.entity.Post;
 import com.newbiequest.newque.domain.post.repository.PostRepository;
-import com.newbiequest.newque.global.client.openai.OpenAiClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -93,6 +92,11 @@ public class PostService {
         PostResponse postResponse = toPostResponse(post);
 
         return postResponse;
+    }
+
+    @Transactional
+    public List<Post> getAllPosts() {
+        return postRepository.findAllByOrderByCreateAtDesc();
     }
 
     @Transactional
