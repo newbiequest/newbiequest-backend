@@ -2,9 +2,11 @@ package com.newbiequest.newque.domain.member.service;
 
 import com.newbiequest.newque.domain.member.dto.request.LogInRequest;
 import com.newbiequest.newque.domain.member.dto.request.MemberSignUpRequest;
+import com.newbiequest.newque.domain.member.dto.request.ScoreRequest;
 import com.newbiequest.newque.domain.member.dto.request.SignOutRequest;
 import com.newbiequest.newque.domain.member.dto.response.LogInResponse;
 import com.newbiequest.newque.domain.member.dto.response.MemberSignUpResponse;
+import com.newbiequest.newque.domain.member.dto.response.ScoreResponse;
 import com.newbiequest.newque.domain.member.dto.response.SignOutResponse;
 import com.newbiequest.newque.domain.member.entity.Member;
 import com.newbiequest.newque.domain.member.repository.MemberRepository;
@@ -12,7 +14,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -90,5 +94,24 @@ public class MemberService {
                 .build();
 
         return signOutResponse;
+    }
+
+    public ScoreResponse updateScore(Long accessToken, ScoreRequest scoreRequest) {
+        Member member = retrieveToken(accessToken);
+        member.updateScore(scoreRequest.getScore());
+
+        return ScoreResponse.builder()
+                .nickname(member.getNickname())
+                .score(member.getScore())
+                .build();
+    }
+
+    public List<ScoreResponse> getAllScores() {
+        return memberRepository.findAll().stream()
+                .map(member -> ScoreResponse.builder()
+                        .nickname(member.getNickname())
+                        .score(member.getScore())
+                        .build())
+                .collect(Collectors.toList());
     }
 }

@@ -2,19 +2,20 @@ package com.newbiequest.newque.domain.member.controller;
 
 import com.newbiequest.newque.domain.member.dto.request.LogInRequest;
 import com.newbiequest.newque.domain.member.dto.request.MemberSignUpRequest;
+import com.newbiequest.newque.domain.member.dto.request.ScoreRequest;
 import com.newbiequest.newque.domain.member.dto.request.SignOutRequest;
 import com.newbiequest.newque.domain.member.dto.response.LogInResponse;
 import com.newbiequest.newque.domain.member.dto.response.MemberSignUpResponse;
+import com.newbiequest.newque.domain.member.dto.response.ScoreResponse;
 import com.newbiequest.newque.domain.member.dto.response.SignOutResponse;
 import com.newbiequest.newque.domain.member.entity.Member;
 import com.newbiequest.newque.domain.member.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -50,5 +51,19 @@ public class MemberController {
         SignOutResponse signOutResponse = memberService.getSignOutResponse();
 
         return ResponseEntity.ok().body(signOutResponse);
+    }
+
+    @PostMapping("/score/{accessToken}")
+    public ResponseEntity<ScoreResponse> updateScore(
+            @PathVariable Long accessToken,
+            @RequestBody ScoreRequest scoreRequest) {
+
+        ScoreResponse scoreResponse = memberService.updateScore(accessToken, scoreRequest);
+        return ResponseEntity.ok().body(scoreResponse);
+    }
+
+    @GetMapping("/score")
+    public ResponseEntity<List<ScoreResponse>> getAllscores() {
+        return ResponseEntity.ok().body(memberService.getAllScores());
     }
 }

@@ -23,44 +23,51 @@ public class MissionCount {
     @JoinColumn(name = "member_id")
     private Member member;
 
-    private Integer copy;
-    private Integer delivery;
-    private Integer stamp;
-    private Integer meeting;
-    private Integer typing;
+    private Integer print;
+    private Integer coffee;
+    private Integer computer;
+    private Integer parcel;
+    private Integer docStorage;
+    private Integer smallMtg;
+    private Integer bigMtg;
     private Integer total;
 
     @Builder
     public MissionCount(Member member) {
         this.member = member;
-        this.copy = 0;
-        this.delivery = 0;
-        this.stamp = 0;
-        this.meeting = 0;
-        this.typing = 0;
+        this.print = 0;
+        this.coffee = 0;
+        this.computer = 0;
+        this.parcel = 0;
+        this.docStorage = 0;
+        this.smallMtg = 0;
+        this.bigMtg = 0;
         this.total = 0;
     }
 
     public void clearMission(String taskType) {
         switch (taskType) {
-            case "COPY" -> this.copy++;
-            case "DELIVERY" -> this.delivery++;
-            case "STAMP" -> this.stamp++;
-            case "MEETING" -> this.meeting++;
-            case "TYPING" -> this.typing++;
+            case "PRINT"       -> this.print++;
+            case "COFFEE"      -> this.coffee++;
+            case "COMPUTER"    -> this.computer++;
+            case "PARCEL"      -> this.parcel++;
+            case "DOC_STORAGE" -> this.docStorage++;
+            case "SMALL_MTG"   -> this.smallMtg++;
+            case "BIG_MTG"     -> this.bigMtg++;
             default -> throw new RuntimeException("Unknown taskType: " + taskType);
         }
-        this.total = (this.total == null ? 0: this.total) + 1;
+        this.total = (this.total == null ? 0 : this.total) + 1;
     }
 
     public Map<String, Integer> toMap() {
         Map<String, Integer> map = new HashMap<>();
-        map.put("COPY", this.copy);
-        map.put("DELIVERY", this.delivery);
-        map.put("STAMP", this.stamp);
-        map.put("MEETING", this.meeting);
-        map.put("TYPING", this.typing);
-
+        map.put("PRINT",       this.print);
+        map.put("COFFEE",      this.coffee);
+        map.put("COMPUTER",    this.computer);
+        map.put("PARCEL",      this.parcel);
+        map.put("DOC_STORAGE", this.docStorage);
+        map.put("SMALL_MTG",   this.smallMtg);
+        map.put("BIG_MTG",     this.bigMtg);
         return map;
     }
 }

@@ -1,8 +1,10 @@
 package com.newbiequest.newque.domain.openai.controller;
 
+import com.newbiequest.newque.domain.member.entity.Member;
+import com.newbiequest.newque.domain.member.service.MemberService;
 import com.newbiequest.newque.domain.openai.dto.request.MissionCompleteRequest;
-import com.newbiequest.newque.domain.openai.dto.response.ChatResponse;
-import com.newbiequest.newque.domain.openai.service.ChatService;
+import com.newbiequest.newque.domain.openai.dto.response.OpenAiResponse;
+import com.newbiequest.newque.domain.openai.service.OpenAiService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -13,25 +15,29 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class OpenAiController {
 
-    private final ChatService chatService;
+    private final OpenAiService chatService;
+    private final MemberService memberService;
 
-    @PostMapping("/mission/{memberId}")
-    public ResponseEntity<ChatResponse> getMission(
-            @PathVariable Long memberId
+    @PostMapping("/mission/{accessToken}")
+    public ResponseEntity<OpenAiResponse> getMission(
+            @PathVariable Long accessToken
     ) {
-        ChatResponse response = chatService.getAnswer(memberId);
+        Member member = memberService.retrieveToken(accessToken);
+        OpenAiResponse response = chatService.getAnswer(member.getId());
 
         return ResponseEntity.ok(response);
     }
 
-    @PostMapping("/mission/complete/{memberId}/{taskType}")
+    @PostMapping("/mission/complete/{accessToken}/{taskType}")
     public ResponseEntity<Void> completeMission(
-            @PathVariable Long memberId,
+            @PathVariable Long accessToken,
             @PathVariable String taskType,
             @RequestBody MissionCompleteRequest request
     ) {
+        Member member = memberService.retrieveToken(accessToken);
+
         if (request.isCompleted()) {
-            chatService.clearMission(memberId, taskType);
+            chatService.clearMission(member.getId(), taskType);
         }
 
         return ResponseEntity.ok().build();

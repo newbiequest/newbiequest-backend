@@ -25,9 +25,19 @@ public class Member {
     @NotBlank
     String password;
 
+    @Column(columnDefinition = "BIGINT DEFAULT 0")
+    Long score = 0L;
+
     @Builder
     public Member(String nickname, String password) {
         this.nickname = nickname;
         this.password = password;
+        this.score = 0L;
+    }
+
+    public void updateScore(Long newScore) {
+        if (newScore > this.score) {
+            this.score = newScore;
+        }
     }
 }

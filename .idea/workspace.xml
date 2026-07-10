@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="251b8c8d-34b5-4c36-a68a-b4ed64101def" name="Changes" comment="" />
+    <list default="true" id="251b8c8d-34b5-4c36-a68a-b4ed64101def" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/chat/controller/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/chat/dto/request/ChatRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/chat/dto/response/ChatResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/chat/entity/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/chat/repository/ChatRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/chat/service/ChatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/chat/websocket/ChatWebSocketHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/member/dto/request/ScoreRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/member/dto/response/ScoreResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/global/config/chat/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/member/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/member/controller/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/member/entity/Member$MemberBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/member/entity/Member$MemberBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/member/entity/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/member/entity/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/member/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/member/service/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/openai/controller/OpenAiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/openai/controller/OpenAiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/openai/dto/response/ChatResponse$ChatResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/openai/dto/response/ChatResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/openai/entity/MissionCount$MissionCountBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/openai/entity/MissionCount$MissionCountBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/openai/entity/MissionCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/openai/entity/MissionCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/openai/service/ChatService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/post/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/domain/post/controller/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/global/client/openai/OpenAiClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/newbiequest/newque/global/client/openai/OpenAiClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/member/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/member/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/member/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/openai/controller/OpenAiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/openai/controller/OpenAiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/openai/dto/response/ChatResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/openai/dto/response/OpenAiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/openai/entity/MissionCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/openai/entity/MissionCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/openai/service/ChatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/openai/service/OpenAiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/domain/post/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/global/client/openai/OpenAiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newbiequest/newque/global/client/openai/OpenAiClient.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,8 +84,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="package-info" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -98,6 +134,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -252,7 +289,16 @@
       <workItem from="1780876504822" duration="2720000" />
       <workItem from="1780883818402" duration="249000" />
       <workItem from="1780884080256" duration="6813000" />
-      <workItem from="1780967508939" duration="414000" />
+      <workItem from="1780967508939" duration="10615000" />
+      <workItem from="1781576516825" duration="33000" />
+      <workItem from="1781578453034" duration="1280000" />
+      <workItem from="1781585869582" duration="17000" />
+      <workItem from="1781586586254" duration="3827000" />
+      <workItem from="1781655645058" duration="2024000" />
+      <workItem from="1781669468155" duration="9277000" />
+      <workItem from="1781837622120" duration="5471000" />
+      <workItem from="1782087876683" duration="896000" />
+      <workItem from="1782257564652" duration="10000" />
     </task>
     <servers />
   </component>
